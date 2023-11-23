@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEHALA food</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cba5d3da34.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/nullstyle.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/main-page-adaptive.css">
+    <link rel="stylesheet" href="./style/underheader_adaptive.css">
+
+    <script src="./script/open-secret.js"></script>
+    <script src="./script/cart.js"></script>
+    <script src="./script/add-to-cart.js"></script>
+    <script src="./script/stocks.js"></script>
+    <script src="./script/on-top.js"></script>
+    
+
+</head>
+<body>
+    <div class="cart hidden" id="cart">
+        <div class="cart_content">
+            <div class="cart_card">
+                <div class="card_opacity"></div>
+                <div class="add_btn add_btn_active">
+                    <div class="remove card_btn">
+                        <i class="fa-solid fa-minus remove"></i>
+                    </div>
+                    <div class="good_count">1</div>
+                    <div class="add card_btn">
+                        <i class="fa-solid fa-plus add"></i>
+                    </div>
+                </div>
+                <div class="del_btn">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+                <h3 class="good_name">
+                    Cupcake
+                </h3>
+                <p class="good_description">
+                    Crumbly dough, vanilla cream and cherry
+                </p>
+                <p class="good_price">
+                    10$
+                </p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header_left">
+            <div class="logo_block header_item">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/icon.png" alt="" class="header_logo">
+                </a>
+            </div>
+            <div class="address_block header_item">
+                <a href="" class="address_link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="address_info address_city">Astana</span>
+                    ,
+                    <span class="address_info address_street">Saryarka 1b</span>
+                </a>
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="nav_block header_item">
+                <ul class="header_nav_ul">
+                    <a href="./dishes.html" class="nav_item"><li>dishes</li></a>
+                    <a href="./restaurant.html" class="nav_item"><li>restaurants</li></a>
+                    <a href="./about_us.html" class="nav_item"><li>about us</li></a>
+                    <div href="" class="nav_item" id="cart_btn">
+                        <li>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            cart
+                            (<span class="cart_count" id="cart_count">0</span>)
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="underheader">
+        <div class="underheader_content">
+            <h1 class="underheader_heading"><span class="red">YEHALA</span> <span class="white">food delivery</span></h1>
+            <p class="white">
+                Food cooked with soul, delivered at the moment will make you happy in difficult times.
+            </p>
+            <p class="white">
+                We deliver our own food, as well as food from your favorite restaurants!
+            </p>
+            <p class="white">
+                Don't forget about promo codes and promotions
+            </p>
+        </div>
+    </div>
+    <div class="categories_block">
+        <h2 class="heading">Categories</h2>
+        <div class="categories">
+            <a class="category" href="#">
+                <img class="category_img" src="./images/seafood.jpg" alt="">
+                <h3>Seafood</h3>
+            </a>
+            <a class="category" href="#">
+                <img class="category_img" src="./images/asian.jpg" alt="">
+                <h3>Chinese cuisine</h3>
+            </a>
+            <a class="category"  href="#">
+                <img class="category_img" src="./images/russian.jpg" alt="">
+                <h3>Russian cuisine</h3>
+            </a>
+            <a class="category"  href="#">
+                <img class="category_img" src="./images/orientalfood.jpg" alt="">
+                <h3>Oriental food</h3>
+            </a>
+        </div>
+        <a href="#" class="see_all_btn">See all</a>
+    </div>
+    <div class="stocks">
+        <h2 class="heading stocks_heading">Stocks</h2>
+        <div class="stocks_buttons">
+            <div class="stock_button active" id="happy_birthday_btn" data-stock="happy_birthday">
+                Happy birthday
+            </div>
+            <div class="stocks_divider"></div>
+            <div class="stock_button inactive" id="good_morning_btn" data-stock="good_morning">
+                Good morning
+            </div>
+            <div class="stocks_divider"></div>
+            <div class="stock_button inactive" id="night_shift_btn" data-stock="night_shift">
+                Night shift
+            </div>
+            <div class="stocks_divider"></div>
+            <div class="stock_button inactive" id="two_plus_one_btn" data-stock="two_plus_one">
+                2 + 1
+            </div>
+        </div>
+        <div class="stock_info_block" id="stock_info_block">
+            <div class="stock_info" id="stock_info">
+                <div class="stock_info_main_text">
+                    <h3 class="stock_info_heading" id="stock_title">
+                        Happy birthday!
+                    </h3>
+                    <p class="stock_info_text" id="stock_content">20% discount on all kinds of desserts and drinks for birthday parties!</p>
+                </div>
+                <p class="stock_info_warning" id="stock_warning">The discount is valid the day before and after the birthday</p>
+            </div>
+            <div class="stock_img">
+                <img src="./images/desserts.jpg" id="stock_img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="top_restaurants">
+        <h1 class="heading top_restaurants_heading">Top restaurants</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carausel_item_content">
+                    <h3 class="restaurant_heading">YEHALA food</h3>
+                    <p class="restaurant_info">Our own restaurant, where food is prepared for every taste. The recipes were developed by the founders of the restaurant, and confirmed by chefs from many countries of the world</p>
+                    <a href="#" class="restaurant_address">
+                        <div class="restaurant_address_icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="address">We are located at: Saryarka 1b</span>
+                    </a>
+                    <div class="restaurant_socials">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <img class="d-block w-100 carausel-img" src="./images/background2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <div class="carausel_item_content">
+                    <h3 class="restaurant_heading">Lavash food</h3>
+                    <p class="restaurant_info">One of the most popular restaurants in Astana, which is working 24/7</p>
+                    <a href="#" class="restaurant_address">
+                        <div class="restaurant_address_icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="address">We are located at: Saryarka 1b</span>
+                    </a>
+                    <div class="restaurant_socials">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <img class="d-block w-100 carausel-img" src="./images/companyfood.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <div class="carausel_item_content">
+                    <h3 class="restaurant_heading">Turandot</h3>
+                    <p class="restaurant_info">Family restaurant with Chinese cuisine, which cooks with love</p>
+                    <a href="#" class="restaurant_address">
+                        <div class="restaurant_address_icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="address">We are located at: Saryarka 1b</span>
+                    </a>
+                    <div class="restaurant_socials">
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <img class="d-block w-100 carausel-img" src="./images/orientalfood.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <i class="fa-solid fa-arrow-left black"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <i class="fa-solid fa-arrow-right black"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="about_us_short">
+        <div class="about_us_short_content">
+            <div class="about_us_short_text">
+                <h3 class="about_us_short_heading heading">
+                    YEHELA food
+                    <br>
+                    company
+                </h3>
+                <p>
+                    The story of two dreamers who were not afraid to put their ideas into practice...
+                </p>
+                <a href="#" class="read_more_button">
+                    READ MORE
+                </a>
+            </div>
+            <div class="about_us_short_logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lets_work_together">
+        <h3 class="lets_work_together_heading heading">Let's work together</h3>
+        <div class="lets_work_together_content">
+            <div class="form">
+                <input type="text" id="" placeholder="Name" class="work_together_input">
+                <input type="text" id="" placeholder="Phone" class="work_together_input">
+                <textarea id="" placeholder="About you or your company" class="work_together_input textarea_input"></textarea>
+                <div class="send_btn">send</div>
+            </div>
+            <div class="lets_work_together_text">
+                If you want to cooperate with us or our delivery system, please fill out this form and we will definitely call you back!
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_left">
+            <h3 class="footer_heading heading">YEHALA food <br> delivery</h3>
+            <div class="footer_socials">
+                <a href="#" class="social">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+                <a href="#" class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <p class="designed_by">Designed by: Takenov Hakknazar and Sarzhan Yernur</p>
+        </div>
+        <div class="footer_center">
+            <div class="on_top_btn" id="on_top_btn">
+                <i class="fa-solid fa-arrow-up" style="margin-right: 10px;"></i>
+                on top
+                <i class="fa-solid fa-arrow-up" style="margin-left: 10px;"></i>
+            </div>
+        </div>
+        <div class="footer_right">
+            <ul class="footer_nav_ul">
+                <a href="./dishes.html" class="footer_nav_item"><li>Dishes</li></a>
+                <a href="./restaurant.html" class="footer_nav_item"><li>Restaurants</li></a>
+                <a href="./about_us.html" class="footer_nav_item"><li>About us</li></a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

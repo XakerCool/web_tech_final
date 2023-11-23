@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <title>YEHALA food - Burger Construct</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cba5d3da34.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/nullstyle.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/make_burger.css">
+
+    <script src="./script/cart.js"></script>
+    <script src="./script/on-top.js"></script>
+    <script src="./script/make-burger.js"></script>
+</head>
+<body>
+    <div class="cart hidden" id="cart">
+        <div class="cart_content">
+            <div class="cart_card">
+                <div class="card_opacity"></div>
+                <div class="add_btn add_btn_active">
+                    <div class="remove card_btn">
+                        <i class="fa-solid fa-minus remove"></i>
+                    </div>
+                    <div class="good_count">1</div>
+                    <div class="add card_btn">
+                        <i class="fa-solid fa-plus add"></i>
+                    </div>
+                </div>
+                <div class="del_btn">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+                <h3 class="good_name">
+                    Cupcake
+                </h3>
+                <p class="good_description">
+                    Crumbly dough, vanilla cream and cherry
+                </p>
+                <p class="good_price">
+                    10$
+                </p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header_left">
+            <div class="logo_block header_item">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/icon.png" alt="" class="header_logo">
+                </a>
+            </div>
+            <div class="address_block header_item">
+                <a href="" class="address_link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="address_info address_city">Astana</span>
+                    ,
+                    <span class="address_info address_street">Saryarka 1b</span>
+                </a>
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="nav_block header_item">
+                <ul class="header_nav_ul">
+                    <a href="./dishes.html" class="nav_item"><li>dishes</li></a>
+                    <a href="./restaurant.html" class="nav_item"><li>restaurants</li></a>
+                    <a href="./about_us.html" class="nav_item"><li>about us</li></a>
+                    <div href="" class="nav_item" id="cart_btn">
+                        <li>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            cart
+                            (<span class="cart_count" id="cart_count">0</span>)
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="underheader">
+        <div class="underheader_content">
+            <h1 class="underheader_heading"><span class="red">YEHALA</span> <span class="white">food company</span></h1>
+            <p class="white">
+                Secret page
+            </p>
+            <p class="white">
+                Wow! You found it! Our secret page.
+            </p>
+            <p class="white">
+                On this page you can create your own burger by clicking special buttons, and order it!
+            </p>
+        </div>
+    </div>
+    <div class="burger_construct">
+        <h3>Burger construct</h3>
+        <div class="burder_construct_content">
+            <div class="components_block">
+                <div class="component" id="cotlette" data-cost="3">
+                    <img src="./burger_parts/cotlette.png" alt="">
+                </div>
+                <div class="component" id="cheese" data-cost="1.5">
+                    <img src="./burger_parts/cheese.png" alt="">
+                </div>
+                <div class="component" id="pickles" data-cost="2.5">
+                    <img src="./burger_parts/pickles.png" alt="">
+                </div>
+                <div class="component" id="salad" data-cost="2">
+                    <img src="./burger_parts/salad.png" alt="">
+                </div>
+                <div class="component" id="tomatoes" data-cost="2">
+                    <img src="./burger_parts/tomatoes.png" alt="">
+                </div>
+                <div class="component" id="bottom_bun" data-cost="1">
+                    <img src="./burger_parts/bottom_bun.png" alt="">
+                </div>
+                <div class="component" id="remove_one">
+                    <i class="fa-solid fa-delete-left"></i>
+                </div>
+                <div class="component" id="clear">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="hamburger_preview" id="burger_preview">
+                <div class="hamburger_part" id="top_bun">
+                    <img src="./burger_parts/top_bun.png" alt="">
+                </div>
+            </div>
+            <div class="order_and_sauce">
+                <div class="order">
+                    <p>Name</p>
+                    <input type="text" id="">
+                    <p>Price: <span id="price">1</span>$</p>
+                    <button class="buy_btn">BUY</button>
+                </div>
+                <div class="add_sauce">
+                    <p>Sauces</p>
+                    <div class="sauces">
+                        <div class="sauce" id="ketchup_sauce" data-cost="0.5">
+                            <img src="./burger_parts/ketchup.png" alt="">
+                        </div>
+                        <div class="sauce" id="mayonnaise_sauce" data-cost="0.5">
+                            <img src="./burger_parts/mayonnaise.png" alt="">
+                        </div>
+                        <div class="sauce" id="mustard_sauce" data-cost="0.5">
+                            <img src="./burger_parts/mustard.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_left">
+            <h3 class="footer_heading heading">YEHALA food <br> delivery</h3>
+            <div class="footer_socials">
+                <a href="#" class="social">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+                <a href="#" class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <p class="designed_by">Designed by: Takenov Hakknazar and Sarzhan Yernur</p>
+        </div>
+        <div class="footer_center">
+            <div class="on_top_btn" id="on_top_btn">
+                <i class="fa-solid fa-arrow-up" style="margin-right: 10px;"></i>
+                on top
+                <i class="fa-solid fa-arrow-up" style="margin-left: 10px;"></i>
+            </div>
+        </div>
+        <div class="footer_right">
+            <ul class="footer_nav_ul">
+                <a href="" class="footer_nav_item"><li>Dishes</li></a>
+                <a href="" class="footer_nav_item"><li>Restaurants</li></a>
+                <a href="" class="footer_nav_item"><li>About us</li></a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

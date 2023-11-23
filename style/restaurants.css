@@ -1,0 +1,318 @@
+main {
+    position: relative;
+}
+
+/* header */
+/* 2-й блок */
+.underheader-frame {
+    position: relative;
+}
+.black-frame {
+    position: absolute;
+    background-color: black;
+    width: 60%;
+    height: 100%;
+    opacity: 80%; 
+    z-index: 1; 
+    padding: 2% 5%;
+}
+.black-frame h1 {
+    color: #FF5E20;
+    font-size: 64px; 
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.black-frame h2 {
+    color: white;
+    font-size: 32px; 
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.black-frame h3 {
+    color: white;
+    font-size: 32px; 
+    margin: 0;
+    font-weight: 700;
+}
+
+.black-frame p {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.companyphoto-frame {
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-image: url(../images/companyfood.jpg);
+    z-index: 0;
+}
+/* 2-й блок */
+/* 3-й блок */
+.categories-list-frame {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding: 0 5%;
+    z-index: 0;
+}
+
+.dropdown {
+    margin-right: 20px;    
+    margin-top: 40px;
+}
+.dropdown-item {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.dropdown button {
+    background-color: #D9D9D9;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+/* 3-й блок */
+/* 4-й блок */
+#ratingform {
+    z-index: 3;
+}
+.rating {
+    margin: 0;
+    padding: 0;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+}
+
+.rating label::before {
+    content: '\2606'; /* Пустая звезда */
+    font-size: 42px;
+}
+
+.rating input:checked ~ label::before {
+    content: '\2605'; /* Заполненная звезда */
+    color: gold;
+}
+.top-dishes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    border-bottom: 1px solid #000;
+}
+.card {
+    width: 400px;
+    height: 300px;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.cards3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.darkening {
+    position: absolute;
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    opacity: 50%;
+}
+.card-body {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.card-body h5 {
+    font-size: 36px;
+    color: white;
+    z-index: 3;
+}
+.card-body p {
+    margin-top: auto;
+    font-size: 24px;
+    color: white;
+    z-index: 3;
+}
+/* 4-й блок */
+/* 5-й блок */
+.doners {
+    margin-top: 60px;
+    text-align: center;
+}
+.sushi {
+    margin-top: 60px;
+    text-align: center;
+}
+.pizza {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.donercards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.sushicards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.pizzacards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+/* 5-й блок */
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+.footer_nav_ul .nav_item {
+    color: #fff;
+}
+.footer_center {
+    justify-self: center;
+}
+.footer_socials {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.footer_socials .social {
+    margin-right: 15px;
+}
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.on_top_btn {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(217, 217, 217, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+.on_top_btn:hover {
+    background-color: #02ab02;
+}
+.footer_nav_item {
+    color: #fff;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.footer_nav_ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer_nav_item:hover {
+    color: #822D0C;
+}
+
+/* Для ресторанов */
+
+.restaurants {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rest-cards {
+    display: grid;
+    grid-template-columns: repeat(2     , 1fr);
+    gap: 10px;
+}
+.restaurants h1{
+    font-size: 32px;
+}
+.rest-logo{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+.restaurant-card {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.appeal {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    color: white;
+    font-size: 28px;
+    z-index: 3;
+}
+
+.card-description {
+    color: white;
+    font-size: 18px;
+    z-index: 3; 
+}
+
+@media (max-width: 700px) {
+    .rest-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

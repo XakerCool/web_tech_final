@@ -1,0 +1,123 @@
+.burger_construct {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.burger_construct h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.burder_construct_content {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2% 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.components_block {
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 5px;
+}
+.component {
+    width: 100px;
+    height: 100px;
+
+    margin: 10px 0;
+    background-color: #B05757;
+    padding: 15px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 50px;
+    color: #fff;
+}
+.component:hover {
+    color: red;
+    background-color: #58AD30;
+}
+.component img {
+    width: 100%;
+    object-fit: cover;
+}
+.hamburger_preview {
+    height: 800px;
+    width: 50%;
+    padding: 2% 7%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.hamburger_part {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.hamburger_part img {
+    width: 100%;
+}
+
+.order {
+    background-color: #D9D9D9;
+    padding: 20px 30px;
+
+    font-family: Raleway;
+    font-size: 24px;
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.order input {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.buy_btn {
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+.buy_btn:hover {
+    background-color: #58AD30;
+    color: #fff;
+}
+.add_sauce {
+    background-color: #D9D9D9;
+    padding: 20px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add_sauce p {
+    font-size: 24px;
+    font-weight: normal;
+}
+.sauces {
+    display: flex;
+}
+.sauce {
+    transition: .3s;
+    cursor: pointer;
+}
+.sauce:hover {
+    transform: translateY(-10px);
+}

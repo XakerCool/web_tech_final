@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/cba5d3da34.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/nullstyle.css">
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/restaurants.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+
+    <script src="./script/cart.js"></script>
+    <script src="./script/on-top.js"></script>
+    <script src="./script/open-secret.js"></script>
+    <title>YEHALA food - restaurants</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="header_left">
+                <div class="logo_block header_item">
+                    <a href="./index.html" class="header_logo">
+                        <img src="./images/icon.png" alt="" class="header_logo">
+                    </a>
+                </div>
+                <div class="address_block header_item">
+                    <a href="" class="address_link">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="address_info address_city">Astana</span>
+                        ,
+                        <span class="address_info address_street">Saryarka 1b</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header_right">
+                <div class="nav_block header_item">
+                    <ul class="header_nav_ul">
+                        <a href="./dishes.html" class="nav_item"><li>dishes</li></a>
+                        <a href="./restaurant.html" class="nav_item"><li>restaurants</li></a>
+                        <a href="./about_us.html" class="nav_item"><li>about us</li></a>
+                        <div href="" class="nav_item" id="cart_btn">
+                            <li>
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                cart
+                                (<span class="cart_count" id="cart_count">0</span>)
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+    <div class="underheader-frame">
+        <div class="black-frame">
+            <h1>YEHALA</h1>
+            <h2>FOOD DELIVERY</h2>
+            <h3>Restaurants</h3>
+            <p>This page contains all partner <br> 
+                restaurants from which you can <br>
+                order food for every taste
+            </p>
+        </div>    
+        <div class="companyphoto-frame" style="background-image: url(./images/background2.jpg);"></div>
+    </div>
+
+    <div class="restaurants">
+        <h1>Restaurants</h1>
+        <div class="rest-cards">
+            <a href="./turandot.html" class="restaurant-card" style="background-image: url(./images/orientalfood.jpg);">
+                <div class="darkening" style="width: 300px; height: 350px; "></div>
+                <div class="rest-logo" style="background-image: url(./images/turandot\ logo.png);"></div>
+                <h2 class="card-title">Turandot</h2>
+                <p class="card-description">Family restaurant with Chinese cuisine</p>
+                <form id="ratingform" action="#">
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5"checked>
+                        <label for="star5"></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"></label>
+                    </fieldset>
+                  </form>
+            </a>
+            <a href="./turandot.html" class="restaurant-card" style="background-image: url(./images/orientalfood.jpg);">
+                <div class="darkening" style="width: 300px; height: 350px; "></div>
+                <div class="rest-logo" style="background-image: url(./images/turandot\ logo.png);"></div>
+                <h2 class="card-title">Turandot</h2>
+                <p class="card-description">Family restaurant with Chinese cuisine</p>
+                <form id="ratingform" action="#">
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5"checked>
+                        <label for="star5"></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"></label>
+                    </fieldset>
+                  </form>
+            </a>
+        </div>
+    </div>
+    <div class="appeal">
+        <h1>Unfortunately, the other partner restaurants cannot provide their services at the moment. We promise that we will fix it in the future</h1>
+    </div>
+    
+  <footer class="footer">
+    <div class="footer_left">
+        <h3 class="footer_heading heading">YEHALA food <br> delivery</h3>
+        <div class="footer_socials">
+            <a href="#" class="social">
+                <i class="fa-solid fa-location-dot"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="social">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <p class="designed_by">Designed by: Takenov Hakknazar and Sarzhan Yernur</p>
+    </div>
+    <div class="footer_center">
+        <div class="on_top_btn" id="on_top_btn">
+            <i class="fa-solid fa-arrow-up" style="margin-right: 10px;"></i>
+            on top
+            <i class="fa-solid fa-arrow-up" style="margin-left: 10px;"></i>
+        </div>
+    </div>
+    <div class="footer_right">
+        <ul class="footer_nav_ul">
+            <a href="./dishes.html" class="footer_nav_item"><li>Dishes</li></a>
+            <a href="./restaurant.html" class="footer_nav_item"><li>Restaurants</li></a>
+            <a href="./about_us.html" class="footer_nav_item"><li>About us</li></a>
+        </ul>
+    </div>
+</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

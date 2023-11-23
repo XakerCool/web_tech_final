@@ -1,0 +1,61 @@
+@media (max-width: 1166px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header_nav_ul {
+        font-size: 20px;
+        text-align: center;
+    }
+    .nav_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about_us_short_logo {
+        width: 50%;
+        height: 30%;
+    }
+    .about_us_short_logo img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 780px) {
+    .categories_block .heading {
+        align-self: center;
+    }
+    .categories {
+        align-items: center;
+        justify-content: center;
+    }
+    .stock_img {
+        display: none;
+    }
+    .stock_info {
+        width: 100%;
+    }
+    .carousel {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .about_us_short_logo {
+        display: none;
+    }
+    .about_us_short_text {
+        text-align: center;
+        align-items: center;
+    }
+    .lets_work_together_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .send_btn {
+        align-self: center;
+    }
+    .footer_right {
+        display: none;
+    }
+}

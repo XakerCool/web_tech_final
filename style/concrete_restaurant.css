@@ -1,0 +1,197 @@
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 5%;
+    margin-bottom: 20px;
+}
+.restaurant_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.restaurant_title h3 {
+    font-weight: 700;
+    font-size: 35px;
+}
+.restaurant_title img{
+    width: 50px;
+}
+
+.restaurant_options {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.option {
+    font-size: 20px;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: rgba(199, 182, 108, 1);
+}
+
+.restaurant_content {
+    padding: 2% 5%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.restaurant_menu_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu_categories {
+    height: 100%;
+    border-right: 2px solid black;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_category {
+    font-size: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.menu_category:hover {
+    color: #02AB02;
+}
+.menu_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_dish {
+    border-radius: 15px;
+    width: 250px;
+    height: 170px;
+    background-image: url(../images/chebureks.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+}
+.dish_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dish_title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.dish_short_description {
+    font-size: 17px;
+}
+.restaurant_about_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.restaurant_about_content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.restaurant_about_text {
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.restaurant_address_content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant_address_content h3 {
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.geo {
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addresses {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+.address {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.restaurant_compleints_content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant_compleints_content h3 {
+    font-size: 30px;
+}
+.complaints_input {
+    border: 1px solid black;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    width: 400px;
+    margin-bottom: 20px;
+}
+textarea {
+    height: 300px;
+    resize: vertical;
+}
+.send_btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(199, 182, 108, 1);
+    color: #fff;
+    transition: .3s;
+}
+.send_btn:hover {
+    background-color: #02AB02;
+}

@@ -1,0 +1,13 @@
+@media (max-width: 976px) {
+    .underheader_content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .underheader_content p {
+        font-size: 20px;
+    }
+    .underheader_heading {
+        font-size: 40px;
+    }
+}

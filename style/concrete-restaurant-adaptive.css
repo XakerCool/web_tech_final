@@ -1,0 +1,12 @@
+@media (max-width: 970px) {
+    .menu_content {
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .restaurant_options {
+        flex-wrap: wrap;
+    }
+    .option {
+        margin: 5px;
+    }
+}
